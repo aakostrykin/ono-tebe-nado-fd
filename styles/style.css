@@ -4,7 +4,8 @@ a {
 }
 
 .header {
-  height: 293px;
+  margin-top: 94px;
+  margin-bottom: 92px;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr min-content 1fr;
@@ -17,8 +18,8 @@ a {
 
 .header__links-list {
   display: flex;
-  padding: 50px;
-  gap: 25px;
+  padding-left: 48px;
+  gap: 33px;
   list-style: circle;
   font-size: 18px;
 }
@@ -49,7 +50,7 @@ a {
   background-position: center;
   display: flex;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .overlay {
@@ -68,7 +69,6 @@ a {
   font-size: 100px;
   letter-spacing: 30px;
   color: rgb(255, 255, 255);
-  z-index: 1;
 }
 
 .word__it {
@@ -92,7 +92,8 @@ a {
   font-size: 22px;
   text-transform: uppercase;
   line-height: 28px;
-  letter-spacing: 0.2rem;
+  word-spacing: 10px;
+  letter-spacing: 0.08rem;
   color: rgb(251, 251, 251);
   position: absolute;
   top: 666px;
@@ -116,21 +117,15 @@ a {
   height: 723px;
   margin-top: 180px;
   margin-bottom: 120px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .lots__heading {
   height: 74px;
-  padding-left: 40px;
+  padding-left: 62px;
   font-size: 40px;
   color: #060000;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-article {
-  position: relative;
 }
 
 .lots__card-list {
@@ -138,21 +133,28 @@ article {
   list-style: none;
   flex-wrap: wrap;
   height: 596px;
+  padding-left: 23px;
   gap: 25px;
-  flex: 1;
-  justify-content: space-between;
 }
 
-.card__title {
-  display: inline-block;
+.card_type {
+  width: 333px;
+  position: relative;
+ 
+}
+
+.card__title{
+  display: block;
+  position: relative;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-size: 22px;
+  font-weight: bold;
+  line-height: 120%;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0%;
-  padding-left: 40px;
-  padding-right: 25px;
-  padding-top: 48px;
-  z-index: 1;
 }
 
 .card__text {
@@ -160,53 +162,57 @@ article {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%; /* или другая высота */
+  text-transform: none;
   font-size: 20px;
+  font-weight: 200;
   line-height: 120%;
   color: #ffffff;
 }
 
-.card_type_film {
+
+
+.card__article {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 596px;
+  width: 333px;
+  z-index: -1;
+}
+
+.card__article-film{
   background-image: url("/images/card-lot-01.jpg");
-  width: 334px;
   background-size: cover;
   background-position: center;
-  z-index: -2;
+
+
 }
 
-.card__text-film {
-  padding-top: 279px;
-}
-
-.card_type_book {
+.card__article-book{
   background-image: url("/images/card-lot-02.jpg");
-  width: 334px;
   background-size: cover;
   background-position: center;
-  z-index: -2;
+
 }
 
-.card__text-book {
-  padding-top: 35px;
-}
-
-.card_type_picture {
+.card__article-picture{
   background-image: url("/images/card-lot-03.jpg");
-  width: 334px;
   background-size: cover;
   background-position: center;
-  z-index: -2;
 }
 
-.card__text-picture {
-  padding-top: 131px;
-}
 
 .lots__look-more-link {
   display: inline-block;
-  padding-left: 40px;
+  padding-left: 62px;
   padding-top: 30px;
   font-size: 20px;
 }
+
 
 .about {
   height: 595px;
@@ -230,14 +236,14 @@ article {
 }
 
 .about__logo-image {
-  padding-left: 50px;
+  padding-left: 45px;
   padding-top: 65px;
   padding-right: 47px;
   padding-bottom: 62px;
 }
 
 .about__oter {
-  margin-top: 138px;
+  margin-top: 135px;
   padding-left: 15px;
 }
 
@@ -284,25 +290,23 @@ article {
 }
 
 .footer__social-list {
-  padding-left: 74px;
+  padding-left: 75px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer__social-link-yt {
   display: inline-block;
-  padding: 25px 25px;
-  background-image: url("/images/yt.svg");
+  width: 50%;
 }
 
 .footer__social-link-vk {
   display: inline-block;
-  padding: 25px 25px;
-  background-image: url("/images/vk.svg");
+  width: 50%;
 }
 
 .footer__social-link-pinterest {
   display: inline-block;
-  padding: 25px 25px;
-  background-image: url("/images/pinterest.svg");
+  width: 48px;
+  height: 48px;
 }
