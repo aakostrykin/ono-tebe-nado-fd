@@ -50,7 +50,6 @@ a {
   background-image: url("/images/cover.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
   position: relative;
   z-index: 1;
 }
