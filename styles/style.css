@@ -140,10 +140,9 @@ a {
 .card_type {
   width: 333px;
   position: relative;
- 
 }
 
-.card__title{
+.card__title {
   display: block;
   position: relative;
   padding-top: 48px;
@@ -173,8 +172,6 @@ a {
   color: #ffffff;
 }
 
-
-
 .card__article {
   position: absolute;
   top: 0px;
@@ -184,27 +181,23 @@ a {
   z-index: -1;
 }
 
-.card__article-film{
+.card__article-film {
   background-image: url("/images/card-lot-01.jpg");
   background-size: cover;
   background-position: center;
-
-
 }
 
-.card__article-book{
+.card__article-book {
   background-image: url("/images/card-lot-02.jpg");
   background-size: cover;
   background-position: center;
-
 }
 
-.card__article-picture{
+.card__article-picture {
   background-image: url("/images/card-lot-03.jpg");
   background-size: cover;
   background-position: center;
 }
-
 
 .lots__look-more-link {
   display: inline-block;
@@ -212,7 +205,6 @@ a {
   padding-top: 30px;
   font-size: 20px;
 }
-
 
 .about {
   height: 595px;
