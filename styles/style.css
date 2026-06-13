@@ -153,15 +153,13 @@ a {
   line-height: 120%;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0%;
 }
 
 .card__text {
-  display: block;
+  display: flex;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 48px;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 100%; /* или другая высота */
